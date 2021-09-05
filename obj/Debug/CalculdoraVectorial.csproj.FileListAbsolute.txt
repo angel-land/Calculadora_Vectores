@@ -1,0 +1,3 @@
+C:\Users\aelrl\Source\Repos\Calculadora_Vectores\obj\Debug\CalculdoraVectorial.csproj.AssemblyReference.cache
+C:\Users\aelrl\Source\Repos\Calculadora_Vectores\obj\Debug\CalculdoraVectorial.Calculadora.resources
+C:\Users\aelrl\Source\Repos\Calculadora_Vectores\obj\Debug\CalculdoraVectorial.csproj.GenerateResource.cache
