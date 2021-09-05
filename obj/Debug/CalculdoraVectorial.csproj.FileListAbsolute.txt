@@ -1,3 +1,10 @@
 C:\Users\aelrl\Source\Repos\Calculadora_Vectores\obj\Debug\CalculdoraVectorial.csproj.AssemblyReference.cache
 C:\Users\aelrl\Source\Repos\Calculadora_Vectores\obj\Debug\CalculdoraVectorial.Calculadora.resources
 C:\Users\aelrl\Source\Repos\Calculadora_Vectores\obj\Debug\CalculdoraVectorial.csproj.GenerateResource.cache
+C:\Users\aelrl\Source\Repos\Calculadora_Vectores\bin\Debug\CalculdoraVectorial.exe.config
+C:\Users\aelrl\Source\Repos\Calculadora_Vectores\bin\Debug\CalculdoraVectorial.exe
+C:\Users\aelrl\Source\Repos\Calculadora_Vectores\bin\Debug\CalculdoraVectorial.pdb
+C:\Users\aelrl\Source\Repos\Calculadora_Vectores\obj\Debug\CalculdoraVectorial.Properties.Resources.resources
+C:\Users\aelrl\Source\Repos\Calculadora_Vectores\obj\Debug\CalculdoraVectorial.csproj.CoreCompileInputs.cache
+C:\Users\aelrl\Source\Repos\Calculadora_Vectores\obj\Debug\CalculdoraVectorial.exe
+C:\Users\aelrl\Source\Repos\Calculadora_Vectores\obj\Debug\CalculdoraVectorial.pdb
