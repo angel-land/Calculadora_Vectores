@@ -95,5 +95,7 @@ namespace CalculdoraVectorial
             RVecLbl.Text=$" La suma de vectores fue: " +Sumai + " i " +Sumaj + " j " +Sumak + " k ";
 
         }
+
+        
     }
 }
