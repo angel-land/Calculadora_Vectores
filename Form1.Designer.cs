@@ -43,13 +43,15 @@
             this.IILbl = new System.Windows.Forms.Label();
             this.JJLbl = new System.Windows.Forms.Label();
             this.KKLbl = new System.Windows.Forms.Label();
-            this.VecRLbl = new System.Windows.Forms.Label();
+            this.ResultLbl = new System.Windows.Forms.Label();
             this.RVecLbl = new System.Windows.Forms.Label();
             this.SumaBtn = new System.Windows.Forms.Button();
             this.RestaBtn = new System.Windows.Forms.Button();
             this.MultiplicacionBtn = new System.Windows.Forms.Button();
             this.OtroBtn = new System.Windows.Forms.Button();
             this.SalirBtn = new System.Windows.Forms.Button();
+            this.CoordCilind = new System.Windows.Forms.Button();
+            this.CoordRect = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // VectorALbl
@@ -188,15 +190,15 @@
             this.KKLbl.TabIndex = 13;
             this.KKLbl.Text = "k";
             // 
-            // VecRLbl
+            // ResultLbl
             // 
-            this.VecRLbl.AutoSize = true;
-            this.VecRLbl.BackColor = System.Drawing.Color.Transparent;
-            this.VecRLbl.Location = new System.Drawing.Point(12, 130);
-            this.VecRLbl.Name = "VecRLbl";
-            this.VecRLbl.Size = new System.Drawing.Size(194, 21);
-            this.VecRLbl.TabIndex = 14;
-            this.VecRLbl.Text = "Vector Resultante R=";
+            this.ResultLbl.AutoSize = true;
+            this.ResultLbl.BackColor = System.Drawing.Color.Transparent;
+            this.ResultLbl.Location = new System.Drawing.Point(12, 130);
+            this.ResultLbl.Name = "ResultLbl";
+            this.ResultLbl.Size = new System.Drawing.Size(110, 21);
+            this.ResultLbl.TabIndex = 14;
+            this.ResultLbl.Text = "Resultado =";
             // 
             // RVecLbl
             // 
@@ -209,7 +211,7 @@
             // 
             // SumaBtn
             // 
-            this.SumaBtn.Location = new System.Drawing.Point(53, 191);
+            this.SumaBtn.Location = new System.Drawing.Point(38, 162);
             this.SumaBtn.Name = "SumaBtn";
             this.SumaBtn.Size = new System.Drawing.Size(90, 33);
             this.SumaBtn.TabIndex = 16;
@@ -219,7 +221,7 @@
             // 
             // RestaBtn
             // 
-            this.RestaBtn.Location = new System.Drawing.Point(149, 191);
+            this.RestaBtn.Location = new System.Drawing.Point(149, 162);
             this.RestaBtn.Name = "RestaBtn";
             this.RestaBtn.Size = new System.Drawing.Size(90, 33);
             this.RestaBtn.TabIndex = 17;
@@ -229,7 +231,7 @@
             // 
             // MultiplicacionBtn
             // 
-            this.MultiplicacionBtn.Location = new System.Drawing.Point(53, 230);
+            this.MultiplicacionBtn.Location = new System.Drawing.Point(259, 162);
             this.MultiplicacionBtn.Name = "MultiplicacionBtn";
             this.MultiplicacionBtn.Size = new System.Drawing.Size(137, 33);
             this.MultiplicacionBtn.TabIndex = 18;
@@ -239,7 +241,7 @@
             // 
             // OtroBtn
             // 
-            this.OtroBtn.Location = new System.Drawing.Point(196, 230);
+            this.OtroBtn.Location = new System.Drawing.Point(421, 162);
             this.OtroBtn.Name = "OtroBtn";
             this.OtroBtn.Size = new System.Drawing.Size(90, 33);
             this.OtroBtn.TabIndex = 19;
@@ -258,20 +260,41 @@
             this.SalirBtn.UseVisualStyleBackColor = true;
             this.SalirBtn.Click += new System.EventHandler(this.SalirBtn_Click);
             // 
+            // CoordCilind
+            // 
+            this.CoordCilind.Location = new System.Drawing.Point(38, 293);
+            this.CoordCilind.Name = "CoordCilind";
+            this.CoordCilind.Size = new System.Drawing.Size(240, 33);
+            this.CoordCilind.TabIndex = 21;
+            this.CoordCilind.Text = "Rectangular -> Cilindrico";
+            this.CoordCilind.UseVisualStyleBackColor = true;
+            this.CoordCilind.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // CoordRect
+            // 
+            this.CoordRect.Location = new System.Drawing.Point(37, 332);
+            this.CoordRect.Name = "CoordRect";
+            this.CoordRect.Size = new System.Drawing.Size(240, 33);
+            this.CoordRect.TabIndex = 22;
+            this.CoordRect.Text = "Cilindrico -> Rectangular";
+            this.CoordRect.UseVisualStyleBackColor = true;
+            // 
             // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.CancelButton = this.SalirBtn;
-            this.ClientSize = new System.Drawing.Size(623, 333);
+            this.ClientSize = new System.Drawing.Size(623, 492);
+            this.Controls.Add(this.CoordRect);
+            this.Controls.Add(this.CoordCilind);
             this.Controls.Add(this.SalirBtn);
             this.Controls.Add(this.OtroBtn);
             this.Controls.Add(this.MultiplicacionBtn);
             this.Controls.Add(this.RestaBtn);
             this.Controls.Add(this.SumaBtn);
             this.Controls.Add(this.RVecLbl);
-            this.Controls.Add(this.VecRLbl);
+            this.Controls.Add(this.ResultLbl);
             this.Controls.Add(this.KKLbl);
             this.Controls.Add(this.JJLbl);
             this.Controls.Add(this.IILbl);
@@ -311,13 +334,15 @@
         private System.Windows.Forms.Label IILbl;
         private System.Windows.Forms.Label JJLbl;
         private System.Windows.Forms.Label KKLbl;
-        private System.Windows.Forms.Label VecRLbl;
+        private System.Windows.Forms.Label ResultLbl;
         private System.Windows.Forms.Label RVecLbl;
         private System.Windows.Forms.Button SumaBtn;
         private System.Windows.Forms.Button RestaBtn;
         private System.Windows.Forms.Button MultiplicacionBtn;
         private System.Windows.Forms.Button OtroBtn;
         private System.Windows.Forms.Button SalirBtn;
+        private System.Windows.Forms.Button CoordCilindBtn;
+        private System.Windows.Forms.Button CoordRectBtn;
     }
 }
 
